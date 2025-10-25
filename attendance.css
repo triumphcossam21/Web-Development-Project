@@ -1,0 +1,42 @@
+* {
+    margin: 0;                       /* Remove default margin */
+    padding: 0;                      /* Remove default padding */
+    box-sizing: border-box;          /* Include padding/border in width */
+    font-family: 'Montserrat', sans-serif; /* Default font */
+}
+body{
+    background: white;
+}
+header{
+     text-align: center;              /* Center header text */
+    color: rgb(0, 0, 0);                    /* White text */
+    padding: 20px 10px;              /* Top/bottom 20px, left/right 10px */
+
+
+}
+#attendance-page {
+    display: flex;
+    flex-direction: row;   /* Arrange vertically */
+    align-items: center;      /* Center horizontally */
+    gap: 40px;                /* Space between sections */
+    padding: 40px 20px;
+}
+
+.attendance-option {
+    background-color: #ffffff;       /* Light background */
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    width: 80%;
+    max-width: 500px;                /* Keeps sections neat */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.attendance-option h2 {
+    margin-bottom: 10px;
+    color: #b30000;                  /* Match your theme red */
+}
+
+.attendance-option p {
+    margin-bottom: 20px;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>First-Time Attendance Form</title>
+  <link rel="stylesheet" href="first_time_attendance.css">
+</head>
+<body>
+
+  <!-- Page Title -->
+  <h2>First-Time Attendance Form</h2>
+
+  <!-- Form -->
+  <form action="save_first_time.php" method="post">
+    <label for="name">Full Name:</label>
+    <input type="text" id="name" name="name" required>
+    
+    <label for="programme">Programme:</label>
+    <input type="text" id="programme" name="programme" required>
+    
+    <label for="year">Year of Study:</label>
+    <select id="year" name="year" required>
+        <option value="">--Select--</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+    </select>
+    
+    <label for="reg_no">Registration Number:</label>
+    <input type="text" id="reg_no" name="reg_no" required>
+    
+    <label for="dob">Date of Birth (optional):</label>
+    <input type="date" id="dob" name="dob">
+    
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone" required>
+    
+    <label for="residence">Place of Residence:</label>
+    <input type="text" id="residence" name="residence" required>
+    
+    <button type="submit">Submit</button>
+</form>
+
+
+</body>
+</html>

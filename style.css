@@ -1,0 +1,253 @@
+/* ===========================
+   FONTS & BASE STYLES
+=========================== */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+/* =========================
+   Reset default styles & set font
+   ========================= */
+* {
+    margin: 0;                       /* Remove default margin */
+    padding: 0;                      /* Remove default padding */
+    box-sizing: border-box;          /* Include padding/border in width */
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.05em;
+}
+
+/* =========================
+   Body styling
+   ========================= */
+body {
+    line-height: 1.6;                /* Improve readability */
+    background-color: #ffffff;       /* White background */
+    color: #000000;                  /* Default text color */
+}
+
+/* =========================
+   Top container (logo + header)
+   ========================= */
+#top {
+    background-color: #ffffff;       /* Red background */
+
+
+}
+
+/* =========================
+   Logo styling
+   ========================= */
+#logo {
+    text-align: left;            
+    padding: 20px 0;                 /* Space above/below logo */
+}
+
+/* =========================
+   Header styling
+   ========================= */
+header {
+    text-align: center;              /* Center header text */
+    color: rgb(0, 0, 0);                    /* White text */
+    padding: 20px 10px;              /* Top/bottom 20px, left/right 10px */
+}
+
+header h1 {
+    font-size: 2.5rem;               /* Main heading size */
+    margin-bottom: 5px;              /* Space below h1 */
+}
+
+header h3 {
+    font-size: 1.8rem;               /* Subheading size */
+    font-weight: 500;                
+    margin-top: 0;                    /* Tighten spacing above */
+    margin-bottom: 2.5rem;           /* Space below h3 */
+}
+
+/* =========================
+   Navigation styling
+   ========================= */
+nav ul {
+    list-style: none;                /* Remove bullets */
+    display: flex;                   /* Horizontal menu */
+    justify-content: center;         /* Center menu */
+    gap: 20px;                       /* Space between menu items */
+    margin-top: 10px;               
+    background-color: #e31b1b; 
+}
+
+nav ul li a {
+    text-decoration: none;           /* Remove underline */
+    color: white;                    
+    font-weight: 600;                
+    padding: 5px 10px;               
+    transition: 0.3s;                /* Smooth hover */
+}
+
+nav ul li a:hover {
+    background-color: #4553f2;       /* Gold background on hover */
+    color: #ffffff;                  
+    border-radius: 5px;              
+}
+
+/* =========================
+   Main sections styling
+   ========================= */
+main section {
+    padding: 40px 20px;              /* Space around sections */
+    text-align: center;              
+}
+
+/* =========================
+   Tickets and Attendance styling
+   ========================= */
+ #attendance {                                    
+    padding: 20px; 
+    margin: 0;                  
+    border-radius: 5px;   
+    line-height: 2.5rem;
+}
+
+/* =========================
+   Buttons styling
+   ========================= */
+button {
+    padding: 10px 20px;              
+    background-color: #e31b1b;       
+    color: white;                     
+    border: none;                     
+    border-radius: 5px;               
+    cursor: pointer;                  
+    font-weight: 600;                 
+    transition: 0.3s;                 
+}
+
+button:hover {
+    background-color: #4553f2;       /* Gold background on hover */
+    color: #ffffff;                  
+    border-radius: 5px;         
+}
+
+/* =========================
+   Hero Background (Welcome -> Tickets)
+   ========================= */
+.service_image {
+    background-image: url('Images/scom\ service\ b.jpg');  
+    background-size: cover;        /* Cover entire area */
+    background-position: center;   /* Center image */
+    background-repeat: no-repeat;  /* Do not repeat */
+    padding: 60px 20px;            /* Space inside sections */
+    color: white;                  /* Text color for contrast */
+    background-color: rgba(0, 0, 0, 0.9);
+    background-attachment: fixed;
+}
+
+.service_image section {
+    background-color: rgba(5, 5, 5, 0.4); /* semi-transparent overlay for readability */
+    margin: 20px auto;               /* Space between sections */
+    padding: 20px;                   /* Inner padding for text */
+    border-radius: 10px;             /* Rounded corners for sections */
+    
+}
+
+
+
+/* =========================
+   About Us styling
+   ========================= */
+#about {       
+    padding: 40px 20px;              
+    margin-bottom: 0;             
+    text-align: left;               
+    margin-left: auto;               
+    margin-right: auto;              
+    border-radius: 10px;             
+}
+
+/* =========================
+   Contact Us styling
+   ========================= */
+#contact {
+    text-align: center;              
+    padding: 50px 20px;              
+    border-top: 2px solid #ccc;      
+}
+
+#contact h2 {
+    margin-bottom: 20px;             
+    font-size: 2rem;                 
+}
+
+#contact ul {
+    list-style: none;                
+    padding: 0;                      
+}
+
+#contact li {
+    margin: 15px 0;                  
+    font-size: 1.2rem;               
+    display: flex;                   
+    align-items: center;             
+    justify-content: center;         
+    gap: 10px;                       
+}
+
+#contact i {
+    font-size: 24px;                 
+    color: #fbfbfb;                  
+}
+
+/* =========================
+   Socials styling
+   ========================= */
+#socials {  
+    text-align: center;              
+    padding: 40px 20px;              
+    border-top: 2px solid #ccc;      
+}
+
+#socials ul {
+    list-style: none;                
+    display: flex;                   
+    justify-content: center;         
+    gap: 30px;                       
+    padding: 0;                      
+    margin: 0;                       
+}
+
+#socials li {
+    display: inline-block;           
+}
+
+#socials a {
+    font-size: 35px;                 
+    transition: color 0.3s ease, transform 0.5s ease, text-shadow 0.3s ease; /* hover smooth */
+}
+
+#socials a:hover {
+    transform: scale(1.2);           
+    text-shadow: 0 0 10px currentColor, 0 0 20px currentColor, 0 0 30px currentColor; /* glowing effect */
+}
+
+/* Individual icon colors */
+#socials .fa-youtube { color: #ffffff; }  
+#socials .fa-facebook { color: #ffffff; } 
+#socials .fa-whatsapp { color: #ffffff; } 
+#socials .fa-tiktok { color: #ffffff; }   
+#socials .fa-instagram { color: #ffffff; } /* Instagram pink-red */
+
+/* =========================
+   Footer styling
+   ========================= */
+footer {
+    background-color: #333;          
+    color: white;                    
+    text-align: center;              
+    padding: 20px 10px;              
+    margin-top: 0;                   
+}
+
+/* =========================
+   Bottom section (extra background for contact + socials)
+   ========================= */
+#bottom {
+    background-color: #e31b1b;       
+    color: white;                    
+}

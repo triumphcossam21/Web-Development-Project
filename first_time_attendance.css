@@ -1,0 +1,110 @@
+
+/* ===== RESET AND FONT SETUP ===== */
+* {
+  margin: 0;                         /* Remove all default margins */
+  padding: 0;                        /* Remove all default paddings */
+  box-sizing: border-box;            /* Include padding & border in element’s width */
+  font-family: 'Montserrat', sans-serif; /* Use same font as main website */
+}
+
+/* ===== BODY STYLING ===== */
+body {
+  background: #ffffff;
+  color: #333;                       /* Dark gray text color for readability */
+  line-height: 1.6;                  /* Comfortable line spacing */
+  display: flex;                     /* Use flexbox to center form horizontally & vertically */
+  justify-content: center;           /* Center horizontally */
+  align-items: center;               /* Center vertically */
+  min-height: 100vh;                 /* Make body fill full browser height */
+  flex-direction: column;            /* Stack items vertically (title on top, form below) */
+}
+
+/* ===== PAGE HEADING ===== */
+h2 {
+  background-color:rgb(255, 255, 255);
+  text-align: center;                /* Center text horizontally */
+  color: #000000;                    /* SCOM red for title */
+  margin-bottom: 10px;               /* Space below the heading before form starts */
+  font-size: 1.8rem;                 /* Slightly large size for emphasis */
+  padding: 20px 50px;                /* Inner spacing: 40px top/bottom, 50px left/right */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2); /* Light shadow for depth */
+  max-width: 700px;                  /* Restrict maximum width of form */
+  width: 100%;                       /* Allow form to shrink on smaller screens */
+  border-top: 5px solid #b30000;     /* Red top border to match SCOM theme */
+}
+
+/* ===== FORM CONTAINER ===== */
+form {
+  background-color: rgb(255, 255, 255);           /* White background for form area */
+  padding: 40px 50px;                /* Inner spacing: 40px top/bottom, 50px left/right */
+  border-radius: 15px;               /* Smooth rounded corners */
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2); /* Light shadow for depth */
+  max-width: 700px;                  /* Restrict maximum width of form */
+  width: 100%;                       /* Allow form to shrink on smaller screens */
+}
+
+/* ===== LABEL STYLING ===== */
+label {
+  display: block;                    /* Each label appears on its own line */
+  font-weight: 600;                  /* Make label text slightly bold */
+  margin-bottom: 6px;                /* Add small gap below label */
+  color: #333;                       /* Dark text color */
+}
+
+/* ===== INPUTS AND SELECT DROPDOWN ===== */
+input[type="text"],
+input[type="tel"],
+input[type="date"],
+select {
+  width: 100%;                       /* Make each input stretch across form width */
+  padding: 10px 12px;                /* Inner padding for better usability */
+  border: 1.5px solid #ccc;          /* Light gray border around inputs */
+  border-radius: 6px;                /* Smooth rounded corners */
+  font-size: 1rem;                   /* Normal text size */
+  transition: 0.3s ease;             /* Smooth effect when focusing */
+  margin-bottom: 15px;               /* Add space below each input */
+}
+
+/* ===== FOCUS EFFECT ON INPUTS ===== */
+input:focus,
+select:focus {
+  outline: none;                     /* Remove default blue browser outline */
+  border-color: #b30000;             /* Highlight border in SCOM red when focused */
+  box-shadow: 0 0 5px rgba(179, 0, 0, 0.3); /* Red glow around input */
+}
+
+/* ===== SUBMIT BUTTON STYLING ===== */
+button {
+  width: 100%;                       /* Make button full width of form */
+  background-color: #b30000;         /* Red background to match theme */
+  color: white;                      /* White text */
+  border: none;                      /* Remove border */
+  padding: 12px;                     /* Inner padding for size */
+  font-weight: 600;                  /* Slightly bold text */
+  font-size: 1rem;                   /* Normal readable size */
+  border-radius: 6px;                /* Rounded corners */
+  cursor: pointer;                   /* Pointer cursor on hover */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover animation */
+}
+
+/* ===== BUTTON HOVER EFFECT ===== */
+button:hover {
+  background-color: #4553f2;         /* Change to gold when hovered */
+  color: #ffffff;                    /* Text becomes red */
+  transform: scale(1.03);            /* Slightly enlarge the button */
+}
+
+/* ===== FORM HOVER EFFECT ===== */
+form:hover {
+  box-shadow: 0 6px 20px rgba(179, 0, 0, 0.2); /* Subtle red shadow when mouse hovers */
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 600px) {
+  form {
+    padding: 25px;                   /* Reduce padding on small screens */
+  }
+  h2 {
+    font-size: 1.5rem;               /* Slightly smaller title for mobile */
+  }
+}
