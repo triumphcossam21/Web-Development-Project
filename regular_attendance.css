@@ -1,110 +1,98 @@
 
-/* ===== RESET AND FONT SETUP ===== */
 * {
- 
-  margin: 0;                         /* Remove all default margins */
-  padding: 0;                        /* Remove all default paddings */
-  box-sizing: border-box;            /* Include padding and borders in element width */
-  font-family: 'Montserrat', sans-serif; /* Use same font for consistency */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
 }
 
-/* ===== BODY STYLING ===== */
 body {
-  background: whitesmoke
-  color: #333;                       /* Dark gray text color */
-  line-height: 1.6;                  /* Comfortable line spacing */
-  display: flex;                     /* Flexbox layout for centering content */
-  justify-content: center;           /* Center form horizontally */
-  align-items: center;               /* Center form vertically */
-  min-height: 100vh;                 /* Full viewport height */
-  flex-direction: column;            /* Stack items vertically (title above form) */
+  background: whitesmoke;
+  color: #333;
+  line-height: 1.6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
 }
 
-/* ===== PAGE HEADING ===== */
 h2 {
-  text-align: center;                /* Center heading horizontally */
-  color: #000000;                    /* SCOM red for heading */
-  margin-bottom: 20px;               /* Space below the title */
-  font-size: 1.5rem;                 /* Slightly large heading */
-  font-weight: 700;                  /* Make it bold */
-  background-color: white;           /* White background for form box */
-  padding: 40px 40px;                /* Space inside the form box */
-  box-shadow: 0 4px 15px rgba(0,0,0,0.5); /* Soft drop shadow for 3D effect */
-  max-width: 500px;                  /* Slightly smaller than first-time form */
-  width: 100%;                       /* Let form adjust on smaller screens */
-  border-top: 5px #b30000;   /* Red border top to match SCOM theme */
+  text-align: center;
+  color: #000000;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  background-color: white;
+  padding: 40px 40px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+  max-width: 500px;
+  width: 100%;
+  border-top: 5px #b30000;
 }
 
-/* ===== FORM CONTAINER ===== */
 form {
-  background-color: white;           /* White background for form box */
-  padding: 40px 50px;                /* Space inside the form box */
-  border-radius: 15px;               /* Smooth corners */
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* Soft drop shadow for 3D effect */
-  max-width: 500px;                  /* Slightly smaller than first-time form */
-  width: 100%;                       /* Let form adjust on smaller screens */
-  border-top: 8px solid #b30000;     /* Red border top to match SCOM theme */
-  text-align: left;                  /* Align labels and inputs neatly */
+  background-color: white;
+  padding: 40px 50px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  max-width: 500px;
+  width: 100%;
+  border-top: 8px solid #b30000;
+  text-align: left;
 }
 
-/* ===== LABEL STYLING ===== */
 label {
-  display: block;                    /* Force each label to its own line */
-  font-weight: 600;                  /* Bold labels for clarity */
-  margin-bottom: 6px;                /* Small space below label */
-  color: #333;                       /* Dark text color for readability */
+  display: block;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #333;
 }
 
-/* ===== INPUT FIELD STYLING ===== */
 input[type="text"] {
-  width: 100%;                       /* Make input take full width */
-  padding: 10px 12px;                /* Space inside input box */
-  border: 1.5px solid #ccc;          /* Light gray border */
-  border-radius: 6px;                /* Smooth rounded edges */
-  font-size: 1rem;                   /* Regular text size */
-  transition: 0.3s ease;             /* Smooth transition for hover/focus */
-  margin-bottom: 15px;               /* Add space below input */
+  width: 100%;
+  padding: 10px 12px;
+  border: 1.5px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: 0.3s ease;
+  margin-bottom: 15px;
 }
 
-/* ===== INPUT FOCUS EFFECT ===== */
 input:focus {
-  outline: none;                     /* Remove browser’s blue outline */
-  border-color: #b30000;             /* Highlight border in SCOM red */
-  box-shadow: 0 0 5px rgba(179, 0, 0, 0.3); /* Red glow around box */
+  outline: none;
+  border-color: #b30000;
+  box-shadow: 0 0 5px rgba(179, 0, 0, 0.3);
 }
 
-/* ===== SUBMIT BUTTON STYLING ===== */
 button {
-  width: 100%;                       /* Full width button */
-  background-color: #b30000;         /* Red background */
-  color: white;                      /* White text */
-  border: none;                      /* No border line */
-  padding: 12px;                     /* Space inside button */
-  font-weight: 600;                  /* Bold text */
-  font-size: 1rem;                   /* Normal readable size */
-  border-radius: 6px;                /* Rounded corners */
-  cursor: pointer;                   /* Hand cursor on hover */
-  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effect */
+  width: 100%;
+  background-color: #b30000;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-/* ===== BUTTON HOVER EFFECT ===== */
 button:hover {
-  background-color: #ffd700;         /* Change to gold when hovered */
-  color: #b30000;                    /* Red text on hover */
-  transform: scale(1.03);            /* Slight zoom for feedback */
+  background-color: #ffd700;
+  color: #b30000;
+  transform: scale(1.03);
 }
 
-/* ===== FORM HOVER EFFECT ===== */
 form:hover {
-  box-shadow: 0 6px 20px rgba(179, 0, 0, 0.2); /* Light red shadow when hovered */
+  box-shadow: 0 6px 20px rgba(179, 0, 0, 0.2);
 }
 
-/* ===== RESPONSIVE DESIGN ===== */
 @media (max-width: 600px) {
   form {
-    padding: 25px;                   /* Reduce padding on smaller screens */
+    padding: 25px;
   }
   h2 {
-    font-size: 1.5rem;               /* Smaller heading for mobile */
+    font-size: 1.5rem;
   }
 }

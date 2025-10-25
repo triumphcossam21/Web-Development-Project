@@ -3,22 +3,197 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Login | MUBAS SCOM E-Registry</title>
-</head>
+    <title>Admin Login_MUBAS SCOM E-Registry</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+             background-image: url('Images/scom\ service\ b.jpg');
+             background-repeat: no-repeat;
+             background-attachment: fixed;
+            background-color: rgba(0, 0, 0, 0.3);
+             background-blend-mode: multiply;
+             z-index: 1;
+             background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #fff;
+            border-radius: 15px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+            overflow: hidden;
+            width: 800px;
+            max-width: 95%;
+        }
+
+        /* ===== LEFT SIDE: LOGO SECTION ===== */
+       
+.logo-section {
+    flex: 1;
+    background: linear-gradient(135deg, #ff4d4d, #ff1a1a); /* red gradient */
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    padding: 150px 20px;
+    color: #fff; /* text color */
+}
+
+.logo-section::before {
+    content: '';
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    background: rgba(255, 255, 255, 0.05);
+    top: -50%;
+    left: -50%;
+    transform: rotate(45deg);
+    z-index: 0;
+}
+
+.logo-section img {
+    width: 130px;
+    height: auto;
+    margin-bottom: 15px;
+    position: relative;
+    z-index: 1;
+}
+
+.logo-section p {
+    font-size: 16px;
+    font-weight: 500;
+    position: relative;
+    z-index: 1;
+}
+
+
+        /* ===== RIGHT SIDE: LOGIN FORM ===== */
+        .form-section {
+            flex: 1;
+            padding: 40px 30px;
+            text-align: center;
+        }
+
+        .form-section h1 {
+            color: #003366;
+            margin-bottom: 25px;
+        }
+
+        .input-box {
+            margin-bottom: 20px;
+        }
+
+        .input-box input {
+            width: 100%;
+            padding: 10px 15px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 14px;
+            outline: none;
+            transition: border-color 0.3s ease;
+        }
+
+        .input-box input:focus {
+            border-color: #0073e6;
+        }
+
+        .btn {
+            background: #003366;
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            width: 100%;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background 0.3s ease;
+        }
+
+        .btn:hover {
+            background: #0055b3;
+        }
+
+        .admin-access {
+            margin-top: 15px;
+        }
+
+        .admin-btn {
+            background: transparent;
+            color: #003366;
+            border: 1px solid #003366;
+            padding: 8px 12px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: all 0.3s ease;
+        }
+
+        .admin-btn:hover {
+            background: #003366;
+            color: #fff;
+        }
+
+        .create-account {
+            margin-top: 20px;
+             text-align: center;
+             font-size: 14px;
+             color: #003366;
+        }
+
+        .create-account p {
+              margin-bottom: 8px;
+        }
+
+        .create-account .admin-btn {
+            padding: 8px 15px;
+            font-size: 14px;
+        }
+    </style>
+
+    </head>
 <body>
     <div class="wrapper">
-        <div class="form-box admin-login">
+        <!-- Left side: Logo and message -->
+        <div class="logo-section">
+            <img src="Images/SCOM logo.png" alt="Logo">
+            <p>Jesus loves you</p>
+        </div>
+
+        <!-- Right side: Admin Login form -->
+        <div class="form-section">
             <form action="#">
                 <h1>Admin Login</h1>
+
                 <div class="input-box">
                     <input type="text" placeholder="Admin Username" required>
-                    <i class="fa-solid fa-user-shield"></i>
                 </div>
+
                 <div class="input-box">
                     <input type="password" placeholder="Password" required>
-                    <i class="fa-solid fa-lock"></i>
                 </div>
-                <button type="submit" class="btn">Login</button>
+
+                <button type="submit" class="btn">
+                    <i class="fa-solid fa-right-to-bracket"></i> Login
+                </button>
+
+                <div class="create-account">
+                    <p>Don't have an account yet?</p>
+                    <button type="button" class="admin-btn" onclick="location.href='admin-register.html'">
+                        <i class="fa-solid fa-user-plus"></i> Create Account
+                    </button>
+                </div>
+
                 <div class="admin-access">
                     <button type="button" class="admin-btn" onclick="location.href='login.html'">
                         <i class="fa-solid fa-arrow-left"></i> Back to User Login
