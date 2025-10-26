@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Dashboard | MUBAS SCOM</title>
+  <link rel="stylesheet" href="/css files/dashboard.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h2 class="logo">SCOM Admin</h2>
+      <nav>
+        <ul>
+          <li class="active"><i class="fas fa-home"></i> Home</li>
+          <li><i class="fas fa-sign-in-alt"></i> Login</li>
+          <li><i class="fas fa-user-plus"></i> Sign Up</li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <header>
+        <h1>Dashboard Overview</h1>
+      </header>
+
+      <!-- Stats Section -->
+      <section class="stats">
+        <div class="card">
+          <h3>Students Attended</h3>
+          <p id="studentsCount">128</p>
+        </div>
+        <div class="card">
+          <h3>Tickets Issued</h3>
+          <p id="ticketsIssued">150</p>
+        </div>
+        <div class="card">
+          <h3>Tickets Verified</h3>
+          <p id="ticketsVerified">120</p>
+        </div>
+      </section>
+
+      <!-- Recent Users -->
+      <section class="recent-users">
+        <h2>Recent Users</h2>
+        <table id="usersTable">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Date Registered</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Real users will appear here dynamically from the database -->
+            <tr>
+              <td>Faith Chiombah</td>
+              <td>faith@scom.mubas.ac.mw</td>
+              <td>Oct 24, 2025</td>
+            </tr>
+            <tr>
+              <td>Rita Banda</td>
+              <td>rita@scom.mubas.ac.mw</td>
+              <td>Oct 23, 2025</td>
+            </tr>
+            <tr>
+              <td>Jubeda Phiri</td>
+              <td>jubeda@scom.mubas.ac.mw</td>
+              <td>Oct 22, 2025</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
