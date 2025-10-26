@@ -1,99 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MUBAS SCOM Evening E-registry and Ticketing</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="/css files/index.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MUBAS SCOM Evening Entry Registration and Ticketing</title>
+  <link rel="stylesheet" href="/css files/index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-  <div class="container">
-    <!-- Sidebar -->
-    <aside class="sidebar" id="sidebar">
-      <h2 class="sidebar-title">Navigation</h2>
-      <nav class="sidebar-nav">
-        <ul>
-          <li class="active"><i class="fas fa-home"></i> Home</li>
-          <li><i class="fas fa-user-edit"></i> Register</li>
-          <li><i class="fas fa-check-circle"></i> Verify</li>
-        </ul>
-      </nav>
-      <button class="toggle-btn" id="toggleBtn"><i class="fas fa-bars"></i></button>
-      <div class="logout">
-        <i class="fas fa-sign-out-alt"></i> Logout
+
+  <div id="top">
+    <div class="logo-header">
+      <div id="logo">
+        <img src="/Images/SCOM logo.png" alt="SCOM Logo" width="150">
       </div>
-    </aside>
+      <div class="text-header">
+        <h1>MUBAS SCOM EVENING</h1>
+        <h3>Entry Registration and Ticketing</h3>
+      </div>
+    </div>
 
-    <!-- Main Content -->
-    <main class="main-content">
-      <!-- Header -->
-      <header class="top-header">
-        <div class="header-inner">
-          <img src="/Images/SCOM logo.png" alt="MUBAS Logo" class="logo-img">
-          <h1>MUBAS SCOM Evening</h1><br><p> E-Registry & Ticketing</p>
-        </div>
-      </header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="attendance.html" target="_blank">Attendance</a></li>
+        <li><a href="bus_tickets.html" target="_blank">Tickets</a></li>
+        <li><a href="#socials">Socials</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+        <li><a href="#about">About Us</a></li>
+      </ul>
+    </nav>
+  </div> 
 
-      <!-- Hero / Attendance Section -->
-      <section class="home-section">
-        <p>Attendance registration and ticketing is now digitalized. <br> Say goodbye to paper tickets and manual registration. <br> Click the button below to register for today's service!.</p>
-        <a href="register.html"><button>REGISTER</button></a>
-      </section>
+  <main>
+    <div class="service_image">
+  <div class="service-content">
 
-      <hr>
+    <section id="intro">
+      <h2>Welcome to MUBAS SCOM Evening</h2>
+      <h3>Jesus Loves You</h3>
+      <p>
+        This platform helps MUBAS SCOM manage service attendance and ticketing digitally.
+        Say goodbye to long queues and paper tickets!
+      </p>
+    </section>
 
-      <!-- About Us -->
-      <section id="about" class="about-section">
-        <h2>About Us</h2>
-        <p><strong>SCOM (Student Christian Organisation of Malawi)</strong> is an interdenominational Christian organisation committed to evangelism, discipleship, and training students to serve the Lord effectively.</p>
-        <p><strong>MUBAS SCOM Evening</strong> meets every Wednesday from <strong>17:45 pm to 20:30 pm</strong> in the Main Lecture Theatre.</p>
-        <p>We also have <strong>SCOM Lunch Hour</strong> every Wednesday during lunch times, with the venue communicated in the WhatsApp MUBAS SCOM group.</p>
+    <section id="attendance">
+      <h2>Attendance</h2>
+      <div>
+        <p>
+          Welcome to today's service! We are excited to have you. Bus Tickets are now completely digitalized,
+          no more paper and saves time.
+        </p>
+        <p>Please select the appropriate option below</p>
+
+        <section class="attendance-option">
+          <h2>Regular Attendee</h2>
+          <p>If you have attended MUBAS SCOM before, click below to register.</p>
+          <a href="/html files/regular_attendance.html"><button>REGISTER AS REGULAR</button></a>
+        </section>
+
+        <section class="attendance-option">
+          <h2>First Time Worshipper</h2>
+          <p>If this is your first time at MUBAS SCOM, please click below to register.</p>
+          <a href="/html files/first_time_attendance.html"><button>REGISTER AS FIRST TIMER</button></a>
+        </section>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>About Us</h2>
+      <p>
+        <strong>SCOM (Student Christian Organisation Of Malawi)</strong>
+        is an indigenous interdenominational Christian Organisation committed to evangelism,
+        discipleship and training of students so that they would love and serve the Lord effectively
+        in the Church and the world.
+      </p>
+      <p>
+        <strong>MUBAS SCOM Evening</strong> meets every Wednesday from 
+        <strong>17:45 pm to 20:30 pm</strong> in the Main Lecture Theatre.
+      </p>
+      <p>
+        We also have <strong>SCOM Lunch Hour</strong> every Wednesday during lunch times,
+        where the venue is communicated in the WhatsApp MUBAS SCOM group.
+      </p>
+      <p>
+        To learn more about SCOM in general:<br>
         <a href="https://scommalawi.org/" target="_blank"><button>LEARN MORE</button></a>
-      </section>
+      </p>
+    </section>
 
-      <hr>
-
-      <!-- Contact & Follow Us -->
-      <section class="info-section">
-        <div class="contact">
-          <h3>Contact Us</h3>
-          <p><i class="fas fa-envelope"></i> Email: polyscom@gmail.com</p>
-          <p><i class="fas fa-phone"></i> Phone: +265 999 888 777</p>
-          <p><i class="fas fa-map-marker-alt"></i> Polytechnic, Blantyre, Malawi</p>
-        </div>
-        <div class="socials">
-          <h3>Follow Us</h3>
-          <p><i class="fab fa-youtube"></i> Youtube</p>
-          <p><i class="fab fa-facebook"></i> Facebook</p>
-          <p><i class="fab fa-whatsapp"></i> WhatsApp</p>
-          <p><i class="fab fa-instagram"></i> Instagram</p>
-          <p><i class="fab fa-tiktok"></i> TikTok</p>
-        </div>
-      </section>
-
-      <!-- Footer -->
-      <footer>
-        <p>&copy; 2025 MUBAS SCOM. All rights reserved.</p>
-      </footer>
-    </main>
   </div>
+</div>
 
-  <script>
-    const toggleBtn = document.getElementById('toggleBtn');
-    const sidebar = document.getElementById('sidebar');
-    toggleBtn.addEventListener('click', () => {
-      sidebar.classList.toggle('collapsed');
-    });
+    <div id="bottom">
+      <section id="contact">
+        <h2>Contact Us</h2>
+        <ul>
+          <li><i class="fas fa-envelope"></i> <a href="mailto:polyscom@gmail.com">polyscom@gmail.com</a></li>
+          <li><i class="fas fa-phone"></i> <a href="tel:+265999888777">+265 999 888 777</a></li>
+          <li><i class="fas fa-map-marker-alt"></i> <span>Polytechnic, Blantyre, Malawi</span></li>
+        </ul>
+      </section>
 
-    const navItems = document.querySelectorAll('.sidebar-nav ul li');
-    navItems.forEach(item => {
-      item.addEventListener('click', () => {
-        navItems.forEach(i => i.classList.remove('active'));
-        item.classList.add('active');
-      });
-    });
-  </script>
+      <section id="socials">
+        <h2>For more information follow us on:</h2>
+        <ul>
+          <li><a href="https://www.youtube.com/@MUBAS_SCOM" target="_blank"><i class="fab fa-youtube"></i></a></li>
+          <li><a href="https://www.facebook.com/MUBASSCOM" target="_blank"><i class="fab fa-facebook"></i></a></li>
+          <li><a href="https://chat.whatsapp.com/IChNHGgfQlmGXpMPwzeJSs?mode=ems_copy_t" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
+          <li><a href="https://www.instagram.com/mubas_scom" target="_blank"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="https://www.tiktok.com/@poly_scom" target="_blank"><i class="fab fa-tiktok"></i></a></li>
+        </ul>
+      </section>
+    </div> 
+  </main> 
+
+  <footer>
+    <p>&copy; 2025 MUBAS SCOM. All rights reserved.</p>
+  </footer>
+
 </body>
 </html>
