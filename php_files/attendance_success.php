@@ -20,7 +20,7 @@ $user_id = isset($_GET['user_id']) ? $_GET['user_id'] : '';
         <h2>Attendance Recorded!</h2>
         <p>Thank you! Your attendance for today has been marked.</p>
         <p>User ID: <strong><?php echo htmlspecialchars($user_id); ?></strong></p>
-        <a href="regular_attendance.html">Back to Attendance Form</a>
+        <a href="../html_files/index.html">Back to Home Page</a>
     </div>
 </body>
 </html>

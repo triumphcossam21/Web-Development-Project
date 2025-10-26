@@ -216,3 +216,8 @@ body {
   background: #0055b3;
   transform: scale(1.03);
 }
+
+.admin-login-btn{
+  margin-bottom: 1rem;
+}
+

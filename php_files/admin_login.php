@@ -32,7 +32,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             // Successful login
             $_SESSION['admin_id'] = $id;
             $_SESSION['username'] = $username;
-            header("Location: ..php_files/admin_dashboard.php"); // redirect to dashboard
+            header("Location: admin_dashboard.php"); // redirect to dashboard
+            echo "<script>alert('Correct Password'); window.location='admin_dashboard.php';</script>";
             exit();
         } else {
             echo "<script>alert('Incorrect password'); window.location='../html_files/admin_login.html';</script>";

@@ -1,28 +1,42 @@
 <?php
-session_start();
+  session_start();
 
-// Redirect if not logged in
-if (!isset($_SESSION['admin_id'])) {
-    header("Location: ../html_files/admin_login.html");
-    exit();
-}
+  // Redirect if not logged in
+  if (!isset($_SESSION['admin_id'])) {
+      header("Location: ../html_files/admin_login.html");
+      exit();
+  }
 
-// Connect to database
-$host = "localhost";
-$db_user = "root";
-$db_pass = "";
-$db_name = "attendance_system";
+  // Connect to database
+  $host = "localhost";
+  $db_user = "root";
+  $db_pass = "";
+  $db_name = "attendance_system";
 
-$conn = new mysqli($host, $db_user, $db_pass, $db_name);
-if ($conn->connect_error) { die("Connection failed: " . $conn->connect_error); }
+  $conn = new mysqli($host, $db_user, $db_pass, $db_name);
+  if ($conn->connect_error) { 
+    die("Connection failed: " . $conn->connect_error); 
+  }
 
-// Fetch stats
-$studentsCount = $conn->query("SELECT COUNT(*) AS count FROM students")->fetch_assoc()['count'];
-$ticketsIssued = $conn->query("SELECT COUNT(*) AS count FROM tickets")->fetch_assoc()['count'];
-$ticketsVerified = $conn->query("SELECT COUNT(*) AS count FROM tickets WHERE verified=1")->fetch_assoc()['count'];
+  // Fetch stats
+  $studentsCount = $conn->query("SELECT COUNT(*) AS count FROM member_details")->fetch_assoc()['count'];
+  // $ticketsIssued = $conn->query("SELECT COUNT(*) AS count FROM tickets")->fetch_assoc()['count'];
+  // $ticketsVerified = $conn->query("SELECT COUNT(*) AS count FROM tickets WHERE verified=1")->fetch_assoc()['count'];
+  $ticketsIssued = 60;
+  $ticketsVerified = 55;
+  // Fetch recent users (last 5)
+  $recentUsers = $conn->query("
+      SELECT m.name, m.phone, m.residence, m.user_id
+      FROM member_details m
+      INNER JOIN (
+          SELECT user_id
+          FROM register
+          ORDER BY attendance_date DESC
+          LIMIT 5
+      ) r ON m.user_id = r.user_id
+  ");
 
-// Fetch recent users (last 5)
-$recentUsers = $conn->query("SELECT name, email, date_registered FROM students ORDER BY date_registered DESC LIMIT 5");
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -41,8 +55,8 @@ $recentUsers = $conn->query("SELECT name, email, date_registered FROM students O
       <nav>
         <ul>
           <li class="active"><i class="fas fa-home"></i> Home</li>
-          <li><a href="admin-login.html"><i class="fas fa-sign-in-alt"></i> Login</a></li>
-          <li><a href="admin-register.html"><i class="fas fa-user-plus"></i> Sign Up</a></li>
+          <li><a href="../html_files/admin_login.html"><i class="fas fa-sign-in-alt"></i> Logout</a></li>
+          <li><a href="../html_files/index.html"><i class="fas fa-user-plus"></i> Scom Home Page</a></li>
         </ul>
       </nav>
     </aside>
@@ -72,17 +86,20 @@ $recentUsers = $conn->query("SELECT name, email, date_registered FROM students O
         <table id="usersTable">
           <thead>
             <tr>
-              <th>Name</th>
-              <th>Email</th>
-              <th>Date Registered</th>
+              <th>NAME</th>
+              <th>PHONE</th>
+              <th>RESIDENCE</th>
+              <th>USER ID</th>
             </tr>
           </thead>
           <tbody>
             <?php while($user = $recentUsers->fetch_assoc()): ?>
             <tr>
               <td><?php echo htmlspecialchars($user['name']); ?></td>
-              <td><?php echo htmlspecialchars($user['email']); ?></td>
-              <td><?php echo date("M d, Y", strtotime($user['date_registered'])); ?></td>
+              <td><?php echo htmlspecialchars($user['phone']); ?></td>
+              <td><?php echo htmlspecialchars($user['residence']); ?></td>
+              <td><?php echo htmlspecialchars($user['user_id']); ?></td>
+              
             </tr>
             <?php endwhile; ?>
           </tbody>

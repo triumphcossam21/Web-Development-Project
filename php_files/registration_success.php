@@ -22,7 +22,7 @@ $user_id = isset($_GET['user_id']) ? $_GET['user_id'] : '';
         <p>Thank you, <?php echo htmlspecialchars($name); ?>!</p>
         <p>Your User ID is: <strong><?php echo htmlspecialchars($user_id); ?></strong></p>
         <p>Please keep this ID for future logins!</p>
-        <a href="first_time_attendance.html">Back to Form</a>
+        <a href="../html_files/mark_attendance.html">Confirm Attendance</a>
     </div>
 </body>
 </html>
