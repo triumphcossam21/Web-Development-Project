@@ -11,7 +11,7 @@
 body {
   line-height: 1.6;
   background-color: #ffffff;
-  color: #000000;
+  color: #003366;
 }
 
 /* --- Top Section --- */
@@ -25,7 +25,7 @@ body {
   align-items: center;
   justify-content: center;
   background-color: #ffffff;
-  padding: 30px 20px;
+  padding: 40px 20px;
   gap: 25px;
   flex-wrap: wrap;
 }
@@ -40,16 +40,16 @@ body {
 }
 
 .text-header h1 {
-  font-size: 2.2rem;
+  font-size: 2.5rem;
   margin: 0;
-  color: #000;
+  color: #003366;s
 }
 
 .text-header h3 {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   font-weight: 500;
   margin: 5px 0 0 0;
-  color: #000;
+  color: #003366;
 }
 
 /* --- Navigation Bar --- */
@@ -61,6 +61,7 @@ nav ul {
   margin: 0;
   padding: 15px 0;
   background-color: #e31b1b;
+  font-size: 1.3rem;
 }
 
 nav ul li a {
@@ -107,6 +108,7 @@ button:hover {
   color: #ffffff;
   border-radius: 5px;
 }
+
 /* --- Service Image Area --- */
 .service_image {
   background-image: url('/Images/scom\ service\ b.jpg');
@@ -122,7 +124,6 @@ button:hover {
   z-index: 1;
 }
 
-
 .service-content {
   background-color: rgba(0, 0, 0, 0.4);
   border-radius: 30px;
@@ -130,8 +131,6 @@ button:hover {
   margin: 0 auto;
   padding: 40px 20px;
 }
-
-
 
 .service-content section {
   margin-bottom: 30px;
@@ -146,7 +145,6 @@ button:hover {
   line-height: 1.8;
   color: #f0f0f0;
 }
-
 
 /* --- Contact --- */
 #contact {
@@ -199,6 +197,7 @@ button:hover {
   font-size: 35px;
   color: #e61212;
 }
+
 /* --- Footer --- */
 footer {
   background-color: #e61212;
@@ -212,4 +211,49 @@ footer {
 #bottom {
   background-color: #ffffff;
   color: #e61212;
+}
+
+/* ===== SIMPLE RESPONSIVE DESIGN ===== */
+@media (max-width: 768px) {
+  /* Stack navbar links vertically */
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  /* Reduce font sizes for better fit */
+  .text-header h1 {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  .text-header h3 {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  /* Center logo and text */
+  .logo-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  /* Make dark section narrower with padding */
+  .service-content {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px 10px;
+  }
+
+  /* Make buttons full width on mobile */
+  button {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  /* Smaller spacing for contact and socials */
+  #contact, #socials {
+    padding: 30px 10px;
+  }
 }

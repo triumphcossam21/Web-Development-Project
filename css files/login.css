@@ -112,7 +112,7 @@ body {
 .btn {
     width: 50%;
     height: 48px;
-    background: #e31b1b;
+    background: #003366;;
     border-radius: 8px;
     border: none;
     outline: none;
@@ -124,7 +124,7 @@ body {
 }
 
 .btn:hover {
-    background: #4553f2;
+    background: #0055b3;
     transform: scale(1.03);
 }
 
@@ -210,7 +210,7 @@ body {
 }
 
 .toogle-panel .btn:hover {
-    background: #4553f2;
+    background: #0055b3;
 }
 
 .admin-access {
@@ -220,7 +220,7 @@ body {
 
 .admin-btn {
     border: 2px solid #fff;
-    background: #e31b1b;
+    background: #003366;;
     color: #fff;
     padding: 8px 18px;
     border-radius: 25px;
@@ -234,6 +234,6 @@ body {
 }
 
 .admin-btn:hover {
-    background: #4553f2;
+    background: #0055b3;
     transform: scale(1.03);
 }
