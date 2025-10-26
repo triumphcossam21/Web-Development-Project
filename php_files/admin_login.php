@@ -5,7 +5,7 @@ session_start();
 $host = "localhost";
 $db_user = "root";
 $db_pass = "";
-$db_name = "attendance";
+$db_name = "attendance_system";
 
 $conn = new mysqli($host, $db_user, $db_pass, $db_name);
 
@@ -32,13 +32,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             // Successful login
             $_SESSION['admin_id'] = $id;
             $_SESSION['username'] = $username;
-            header("Location: admin-dashboard.php"); // redirect to dashboard
+            header("Location: ..php_files/admin_dashboard.php"); // redirect to dashboard
             exit();
         } else {
-            echo "<script>alert('Incorrect password'); window.location='admin-login.html';</script>";
+            echo "<script>alert('Incorrect password'); window.location='../html_files/admin_login.html';</script>";
         }
     } else {
-        echo "<script>alert('Admin not found'); window.location='admin-login.html';</script>";
+        echo "<script>alert('Admin not found'); window.location='../html_files/admin_login.html';</script>";
     }
 
     $stmt->close();

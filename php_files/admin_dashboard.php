@@ -3,7 +3,7 @@ session_start();
 
 // Redirect if not logged in
 if (!isset($_SESSION['admin_id'])) {
-    header("Location: admin-login.html");
+    header("Location: ../html_files/admin_login.html");
     exit();
 }
 
@@ -11,7 +11,7 @@ if (!isset($_SESSION['admin_id'])) {
 $host = "localhost";
 $db_user = "root";
 $db_pass = "";
-$db_name = "attendance";
+$db_name = "attendance_system";
 
 $conn = new mysqli($host, $db_user, $db_pass, $db_name);
 if ($conn->connect_error) { die("Connection failed: " . $conn->connect_error); }
