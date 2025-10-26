@@ -23,7 +23,7 @@ $ticketsVerified = $conn->query("SELECT COUNT(*) AS count FROM tickets WHERE ver
 
 // Fetch recent users (last 5)
 $recentUsers = $conn->query("SELECT name, email, date_registered FROM students ORDER BY date_registered DESC LIMIT 5");
-?>
+?php>
 <!DOCTYPE html>
 <html lang="en">
 <head>
