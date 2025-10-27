@@ -5,7 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
-  font-size: 1.05em;
+  font-size: 1rem;
 }
 
 body {
@@ -40,13 +40,13 @@ body {
 }
 
 .text-header h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin: 0;
   color: #003366;
 }
 
 .text-header h3 {
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 500;
   margin: 5px 0 0 0;
   color: #003366;
@@ -173,7 +173,7 @@ button:hover {
 }
 
 #contact i {
-  font-size: 22px;
+  font-size: 25px;
   color: #ec1414;
 }
 
@@ -181,7 +181,7 @@ button:hover {
 #socials {
   text-align: center;
   padding: 40px 20px;
-  border-top: 2px solid #e01717;
+  border-top: 2px solid #33476d;
 }
 
 #socials ul {
@@ -194,7 +194,7 @@ button:hover {
 }
 
 #socials a {
-  font-size: 35px;
+  font-size: 30px;
   color: #e61212;
 }
 

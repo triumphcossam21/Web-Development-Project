@@ -52,7 +52,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if ($insertTicket->execute()) {
         echo "
         <div style='font-family: Arial, sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; background: #f0f0f0;'>
-            <div style='background: #fff; padding: 40px; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.2); text-align: center; width: 350px;'>
+             <div style='background: #fff; padding: 40px; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.2); text-align: center; width: 350px;'>
                 <h1 style='color:#003366;'>Ticket Created!</h1>
                 <p><strong>Name:</strong> " . htmlspecialchars($name) . "</p>
                 <p><strong>User ID:</strong> $user_id</p>

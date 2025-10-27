@@ -18,7 +18,12 @@ $user_id = isset($_GET['user_id']) ? $_GET['user_id'] : '';
 </head>
 <body>
     <div class="box">
-        <h2>Registration Successful!</h2>
+        <h2>
+        <div id="logo">
+        <img src="../Images/SCOM logo.png" alt="SCOM Logo" width="100">
+       </div>
+       Registration Successful!
+       </h2>
         <p>Thank you, <?php echo htmlspecialchars($name); ?>!</p>
         <p>Your User ID is: <strong><?php echo htmlspecialchars($user_id); ?></strong></p>
         <p>Please keep this ID for future logins!</p>
