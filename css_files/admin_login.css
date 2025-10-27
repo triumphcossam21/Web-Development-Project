@@ -14,10 +14,10 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-image: url('/Images/service_b.jpg');
+  background-image: url('../Images/service_b.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.5);
   background-blend-mode: multiply;
   background-attachment: fixed;
 }
@@ -35,7 +35,7 @@ body {
 .container h1 {
   font-size: 36px;
   margin: -10px 0;
-  color: #003366;
+  color: #ffffff;
 }
 
 .container p {

@@ -19,7 +19,7 @@ body {
 .sidebar {
   width: 220px;
   background: #b71c1c;
-  color: #fff;
+  color: #1e225f;
   padding: 20px;
   position: fixed;
   height: 100vh;
@@ -30,11 +30,23 @@ body {
   font-size: 1.5rem;
   margin-bottom: 30px;
 }
+nav a {
+  text-decoration: none; /* removes underline */
+  color: inherit;        /* keeps the text color same as parent */
+  display: inline-flex;  /* optional: helps align icon + text nicely */
+  align-items: center;   /* vertically centers icon and text */
+  gap: 5px;              /* space between icon and text */
+  font-size: 1.2rem;
+}
+
 
 .sidebar ul {
   list-style: none;
 }
 
+.sidebar ul li {
+  text-decoration: none;
+}
 .sidebar li {
   padding: 12px;
   margin-bottom: 10px;
@@ -46,9 +58,10 @@ body {
   transition: background 0.3s;
 }
 
+
 .sidebar li:hover,
 .sidebar li.active {
-  background: #ff5252;
+  background: #f3f2f2;
 }
 
 /* Main content */
