@@ -7,7 +7,17 @@
 }
 
 body {
-  background: whitesmoke;
+  background: url('/Images/service_b.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 60px 20px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-attachment: fixed;
+  background-blend-mode: multiply;
+  text-align: center;
+  z-index: 1;
   color: #333;
   line-height: 1.6;
   display: flex;
@@ -25,11 +35,12 @@ h2 {
   font-weight: 700;
   background-color: white;
   padding: 40px 40px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
   max-width: 500px;
   width: 100%;
-  border-top: 5px #b30000;
-}
+  border-radius: 15px;
+  border-top: 8px solid #b30000;
+  }
 
 form {
   background-color: white;
@@ -38,7 +49,6 @@ form {
   box-shadow: 0 4px 15px rgba(0,0,0,0.1);
   max-width: 500px;
   width: 100%;
-  border-top: 8px solid #b30000;
   text-align: left;
 }
 
@@ -79,14 +89,11 @@ button {
 }
 
 button:hover {
-  background-color: #ffd700;
-  color: #b30000;
+  background-color: #070aa9;
+  color: #ffffff;
   transform: scale(1.03);
 }
 
-form:hover {
-  box-shadow: 0 6px 20px rgba(179, 0, 0, 0.2);
-}
 
 @media (max-width: 600px) {
   form {

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Request Ticket | SCOM</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #f0f0f0;
+    }
+    form {
+      background: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      text-align: center;
+      width: 300px;
+    }
+    input, button {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    button {
+      background: #003366;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover { background: #0055b3; }
+  </style>
+</head>
+<body>
+  <form action="../php_files/create_ticket.php" method="POST">
+    <h2>Request Your Ticket</h2>
+    <input type="text" name="user_id" placeholder="Enter your User ID" required>
+    <button type="submit">Get Ticket</button>
+  </form>
+</body>
+</html>

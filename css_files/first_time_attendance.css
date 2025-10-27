@@ -6,7 +6,16 @@
 }
 
 body {
-  background: #ffffff;
+  background: url('/Images/service_b.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 60px 20px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-attachment: fixed;
+  background-blend-mode: multiply;
+  z-index: 1;
   color: #333;
   line-height: 1.6;
   display: flex;
@@ -26,7 +35,8 @@ h2 {
   box-shadow: 0 4px 15px rgba(0,0,0,0.2);
   max-width: 700px;
   width: 100%;
-  border-top: 5px solid #b30000;
+  border-radius: 15px;
+  border-top: 6px solid #b30000;
 }
 
 form {
