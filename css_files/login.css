@@ -14,7 +14,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-image: url('/Images/scom\ service\ b.jpg');
+    background-image: url('../Images/service_b.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-color: rgba(0, 0, 0, 0.3);

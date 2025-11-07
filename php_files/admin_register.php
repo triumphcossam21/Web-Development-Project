@@ -9,7 +9,7 @@ $db_name = "attendance_system";
 $conn = new mysqli($host, $db_user, $db_pass, $db_name);
 
 if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error)
+    die("Connection failed: " . $conn->connect_error);
 }
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
